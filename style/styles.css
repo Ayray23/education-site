@@ -202,6 +202,115 @@ nav h3 {
     font-size: 1em;
     line-height: 1.6;
 }
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin-left: 6rem;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+.stats- {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.stats- div {
+    text-align: center;
+}
+
+.stats- h3 {
+    font-size: 24px;
+    color: #019872;
+    margin: 0;
+}
+
+.stats p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 0;
+}
+.content {
+    max-width: 100%;
+    padding-right: 1rem;
+}
+
+.content h2 {
+    color: #028475;
+    font-size: 36px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.content .stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content .stats div {
+    text-align: center;
+}
+
+.content .stats h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.content .stats p {
+    font-size: 14px;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 20px;
+    border: 1rem;
+    border-color: green;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.admission-btn {
+    background-color: #019872;
+    color: #fff;
+   
+}
+
+.learn-more-btn {
+    background-color: transparent;
+    color: #019872;
+    border: 1px solid #019872;
+}
+
+.About-image img {
+    max-width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
 @media (max-width: 400px) {
     .hero {
         height: 300px;
@@ -327,5 +436,44 @@ nav h3 {
         font-size: 0.8em;
         line-height: 1.4;
     }
-   
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: auto;
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+    .content ul li {
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    .content {
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+    
+    .content h2 {
+        color: #028475;
+        font-size: 26px;
+    }
+    
+    .content p {
+        font-size: 13px;
+        color: #555;
+    }
+    .buttons {
+        margin-top: 0px;
+        border: 0rem;
+        display: flex;
+        margin-bottom: 10px;
+        border-color: green;
+    }
+    .About-image img {
+        /* max-width: 250px; */
+        /* width: fit-content; */
+        height: 250px;
+        border-radius: 10px;
+    }
 }
