@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero {
+    background-image: url(../assets/kids-1093758_1280.jpg);
+    box-shadow: inset 0 0 0 2000px rgba(31, 32, 32, 0.289);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+}
+nav h3 {
+    font-size: 2rem;
+}
+.nav-pages ul {
+    display: flex;
+    gap: 2rem;
+}
+.nav-pages ul li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.enroll {
+    padding: 14px 22px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.enroll:hover {
+   
+    background-color: rgb(39, 198, 39);
+}
+.hero-content {
+    display: flex;
+}
+.hero-content article{
+    width: 50%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.hero-content-text {
+    height: 600px;
+    align-content: center;
+    color: white;
+ 
+}
+.hero-content-text h1{
+    font-size: 3rem;
+}
+.hero-content-text p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero-playicon {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+.what-offer {
+    height: fit-content;
+    background-color: white;
+}
+.offer-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    
+}
+.offer-card {
+    margin-top: -2.5rem;
+    background-color: green;
+    height: 300px;
+    color: white;
+    padding: 2rem;
+    align-content: center;
+}
+.second-card {
+    background: orangered;
+}
+.offer-card p {
+    background: inherit;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.offer-card h4{
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-icon{
+    height: 40px;
+    width: 70px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.what-offer-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-offer-section h2 {
+    color: lightgreen;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.what-offer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.what-offer- {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.what-offer:hover {
+    transform: translateY(-10px);
+}
+.offer-icon-1 {
+    font-size: 3em;
+    color: #1add75;
+    margin-bottom: 20px;
+}
+
+.offer-icon-2 {
+    font-size: 3em;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.offer-icon-3 {
+    font-size: 3em;
+    color: #5b24f3;
+    margin-bottom: 20px;
+}
+
+.offer-icon-4 {
+    font-size: 3em;
+    color: #b40f9e;
+    margin-bottom: 20px;
+}
+
+.offer-icon-5{
+    font-size: 3em;
+    color: #00fc86da;
+    margin-bottom: 20px;
+}
+
+.offer-icon-6{
+    font-size: 3em;
+    color: #ddb01a;
+    margin-bottom: 20px;
+}
+
+.what-offer- h3 {
+    color: #474747;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.what-offer- p {
+    color: #777;
+    font-size: 1em;
+    line-height: 1.6;
+}
+@media (max-width: 400px) {
+    .hero {
+        height: 300px;
+        padding: 1rem;
+    }
+    nav {
+       
+        display: none;
+    }
+    .enroll {
+        padding: 6px 12px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 10px;
+       
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content article{
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .hero-content-text {
+        height: 400px;
+        align-content: center;
+        color: white;
+     
+    }
+    .hero-content-text h1{
+        font-size: 1rem;
+    }
+    .hero-content-text p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .offer-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: space-between;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        
+    }
+    .offer-card {
+        margin-top: 1rem;
+        background-color: green;
+        height: 300px;
+        color: white;
+        padding: 2rem;
+        align-content: center;
+        /* margin-bottom: 1.2rem; */
+    }
+    .what-offer-section {
+        text-align: center;
+        padding: revert;
+    }
+    .what-offer-section h2 {
+        color: lightgreen;
+        font-size: 2em;
+        margin-bottom: 10px
+    }
+    .intro-text {
+        color: #555;
+        font-size: 0.9em;
+        margin-bottom: 40px;
+    }
+    .what-offer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width:  400px;
+        margin: 0 auto;
+    }
+    .what-offer- h3 {
+        color: #474747;
+        font-size: 1em;
+        margin-bottom: 10px
+    }
+    .offer-icon-1 {
+        font-size: 2em;
+        color: #1add75;
+        margin-bottom: 20px
+    }
+    .offer-icon-2 {
+        font-size: 2em;
+        color: orange;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-3 {
+        font-size: 2em;
+        color: #5b24f3;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-4 {
+        font-size: 2em;
+        color: #b40f9e;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-5{
+        font-size: 2em;
+        color: #00fc86da;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-6{
+        font-size: 2em;
+        color: #ddb01a;
+        margin-bottom: 20px;
+    }
+    .what-offer- p {
+        color: #777;
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+   
+}
