@@ -323,6 +323,10 @@ nav h3 {
     text-decoration: none;
     font-size: 14px;
 }
+.buttons :hover {
+    background-color: green;
+    color: white;
+}
 .admission-btn {
     background-color: #019872;
     color: #fff;
@@ -330,13 +334,12 @@ nav h3 {
 }
 
 .learn-more-btn {
-    background-color: transparent;
+    background-color: white;
     color: #019872;
-    border: 1px solid #019872;
+    border: 1px solid #019872;   
 }
-
 .About-image img {
-    max-width: 600px;
+    max-width: 450px;
     height: 500px;
     border-radius: 10px;
 }
@@ -461,8 +464,73 @@ nav h3 {
     border-radius: 5px;
     cursor: pointer;
 }
+.price-btn{
+    background-color: transparent;
+    color: #019872;
+    border: 1px solid #019872;
+    align-items: center;
+}
+.test {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+.testimonials {
+    width: 40%;
+}
+.why-choose-us{
+    width: 60%;
+}
+.testimonials h2, .why-choose-us h2 {
+    color: #019c6e;
+}
+.testimonials p, .why-choose-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+}
+.test-img{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.testimonial-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.why-choose-us .section {
+    background-color:white;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.why-choose-us .section img {
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+.why-choose-us li {
+    margin-top: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.section h3{
+    background-color: #019872;
+    padding: 10px;
+    color: white;
+}
+
 footer {
-    background-color: #00cba9;
+    background-color: #0fb78d;
     padding: 40px 0;
 }
 
@@ -471,9 +539,7 @@ footer {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
+    
 }
 
 .footer-section {
@@ -703,7 +769,6 @@ footer {
     .buttons {
         margin-top: 0px;
         border: 0rem;
-        display: flex;
         margin-bottom: 10px;
         border-color: green;
     }
@@ -756,10 +821,10 @@ footer {
         font-size: 0.8em;
     }
     .pricing-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
     }
     .pricing-plan {
         background-color: #f5f5f5;
@@ -769,9 +834,19 @@ footer {
         text-align: center;
     }
     .pricing h2 {
-    color: #2c998e;
-    font-size: 1.5em;
-    padding: 1rem;
+        color: #2c998e;
+        font-size: 1.5em;
+        padding: 1rem;
+    }
+    .test {
+        flex-direction: column;
+    }
+    .testimonials, .why-choose-us {
+        width: 100%;
+    }
+    .testimonial-img {
+        width: 40px;
+        height: 40px;
     }
     .footer-container {
         max-width: 1200px;
