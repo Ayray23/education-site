@@ -228,6 +228,7 @@ nav h3 {
 .Education-text p{
     margin: 16px;
     text-align: center;
+    line-height: 1.6;
 }
 .about-us {
     display: flex;
@@ -355,6 +356,7 @@ nav h3 {
 .school-news p {
     color: #6c757d;
     margin-bottom: 40px;
+    line-height: 1.6;
 }
 
 .news-cards {
@@ -417,6 +419,7 @@ nav h3 {
 }
 .pricing p{
     color: #748180;
+    line-height: 1.6;
 }
 .pricing-card {
     display: flex;
@@ -466,14 +469,16 @@ footer {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .footer-section {
-    flex: 1;
     margin: 20px;
+    
 }
 
 .footer-section h2 {
@@ -767,5 +772,11 @@ footer {
     color: #2c998e;
     font-size: 1.5em;
     padding: 1rem;
+    }
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
