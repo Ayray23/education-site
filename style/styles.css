@@ -260,28 +260,28 @@ nav h3 {
     color: #777;
     margin: 5px 0 0;
 }
-.content {
+.about {
     max-width: 100%;
     padding-right: 1rem;
     font-size: 26px;
 }
 
-.content h2 {
+.about h2 {
     color: #028475;
     font-size: 36px;
 }
 
-.content p {
+.about p {
     font-size: 22px;
     color: #555;
 }
 
-.content ul {
+.about ul {
     list-style: none;
     padding: 0;
 }
 
-.content ul li {
+.about ul li {
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 16px;
@@ -289,22 +289,22 @@ nav h3 {
     font-weight: lighter;
 }
 
-.content .stats {
+.about .stats {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
 
-.content .stats div {
+.about .stats div {
     text-align: center;
 }
 
-.content .stats h3 {
+.about .stats h3 {
     font-size: 24px;
     color: white;
 }
 
-.content .stats p {
+.about .stats p {
     font-size: 14px;
     color: #555;
 }
@@ -587,6 +587,275 @@ footer {
     border-radius: 5px;
 }
 
+@media (max-width: 425px) {
+    .hero {
+        height: 300px;
+        padding: 1rem;
+    }
+    nav {
+       
+        display: none;
+    }
+    .enroll {
+        padding: 6px 12px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 10px;
+       
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content article{
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .hero-content-text {
+        height: 400px;
+        align-content: center;
+        color: white;
+     
+    }
+    .hero-content-text h1{
+        font-size: 1rem;
+    }
+    .hero-content-text p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .offer-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: space-between;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        
+    }
+    .offer-card {
+        margin-top: 1rem;
+        background-color: green;
+        height: 300px;
+        color: white;
+        padding: 2rem;
+        align-content: center;
+        /* margin-bottom: 1.2rem; */
+    }
+    .what-offer-section {
+        text-align: center;
+        padding: revert;
+    }
+    .what-offer-section h2 {
+        color: lightgreen;
+        font-size: 2em;
+        margin-bottom: 10px
+    }
+    .intro-text {
+        color: #555;
+        font-size: 0.9em;
+        margin-bottom: 40px;
+    }
+    .what-offer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width:  400px;
+        margin: 0 auto;
+    }
+    .what-offer- h3 {
+        color: #474747;
+        font-size: 1em;
+        margin-bottom: 10px
+    }
+    .offer-icon-1 {
+        font-size: 2em;
+        color: #1add75;
+        margin-bottom: 20px
+    }
+    .offer-icon-2 {
+        font-size: 2em;
+        color: orange;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-3 {
+        font-size: 2em;
+        color: #5b24f3;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-4 {
+        font-size: 2em;
+        color: #b40f9e;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-5{
+        font-size: 2em;
+        color: #00fc86da;
+        margin-bottom: 20px;
+    }
+    
+    .offer-icon-6{
+        font-size: 2em;
+        color: #ddb01a;
+        margin-bottom: 20px;
+    }
+    .what-offer- p {
+        color: #777;
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+    .Education{
+        background-image: url(../assets/boys-286245_1280.jpg);
+        box-shadow: inset 0 0 0 2000px rgba(31, 32, 32, 0.289);
+        height: 400px;
+        width: 420px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .Education-text{
+        height: 300px;
+        align-content: stretch;
+        display: flex;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+    .Education-text h1{
+        font-size: 20px;
+    }
+    .Education-text p{
+        margin: 14px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.4rem;
+        margin: auto;
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+    .about ul li {
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    .about {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .about h2 {
+        color: #028475;
+        font-size: 26px;
+    }
+    
+    .about p {
+        font-size: 13px;
+        color: #555;
+    }
+    .buttons {
+        margin-top: 0px;
+        border: 0rem;
+        margin-bottom: 10px;
+        border-color: green;
+    }
+    .About-image img {
+        max-width: 410px;
+        width: fit-content;
+        height: 250px;
+        border-radius: 10px;
+        margin: 8px;
+    }
+    .news-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .news-card {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        gap: 20px;
+        margin: 20px;
+        overflow: hidden;
+        text-align: left;
+    }
+    
+    .news-card img {
+        width: 50%;
+        height: auto;
+    }
+    .school-news {
+        text-align: center;
+        max-width: 900px;
+        margin: 0;
+        padding: 0px;
+    }
+    .school-news h2 {
+        color: #47b475;
+        font-size: 1.5em; 
+        margin-bottom: 10px;
+    }
+    .school-news p {
+        color: #6c757d;
+        margin-bottom: 40px;
+        font-size: 0.8em;
+    }
+    .pricing-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .pricing-plan {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 370px;
+        text-align: center;
+    }
+    .pricing h2 {
+        color: #2c998e;
+        font-size: 1.5em;
+        padding: 1rem;
+    }
+    .test {
+        flex-direction: column;
+    }
+    .testimonials, .why-choose-us {
+        width: 100%;
+    }
+    .testimonial-img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 @media (max-width: 400px) {
     .hero {
         height: 300px;
