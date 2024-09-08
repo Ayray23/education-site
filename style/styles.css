@@ -33,7 +33,16 @@ nav h3 {
     list-style: none;
     text-decoration: none;
 }
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
 
+#menuToggle {
+    display: none;
+}
 .enroll {
     padding: 14px 22px;
     border-radius: 20px;
@@ -79,8 +88,8 @@ nav h3 {
     margin-left: 5rem;
 }
 .what-offer {
-    height: fit-content;
-    background-color: white;
+    /* height: fit-content;
+    background-color: white; */
 }
 .offer-cards {
     display: flex;
@@ -590,11 +599,32 @@ footer {
 @media (max-width: 770px) {
     .hero {
         height: 600px;
-        padding: 1rem;
+        padding: 0rem;
     }
     nav {
-       
+        background-color:white;
+        display:flex;
+        justify-content: space-around;
+    }
+    .nav-pages ul {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .nav-pages ul li {
+        margin: 15px 0;
+    }
+    .nav-pages ul li, a {
+       display: none;
+    }
+    .menu-icon {
+        display: flex;
+        color: black;
     }
     .enroll {
         padding: 12px 20px;
@@ -611,7 +641,7 @@ footer {
     }
     .hero-content article{
         width: 60%;
-        padding-left: 0rem;
+        padding-left: 1rem;
         padding-right: 0rem;
     }
 
@@ -869,15 +899,12 @@ footer {
 }
 @media (max-width: 425px) {
     .hero {
-        height: 300px;
-        padding: 1rem;
+        height: 410px;
+        padding: 0rem;
     }
-    nav {
-       
-        display: none;
-    }
+    
     .enroll {
-        padding: 6px 12px;
+        padding: 10px 12px;
         border-radius: 20px;
         background-color: green;
         color: white;
@@ -1138,15 +1165,12 @@ footer {
 }
 @media (max-width: 400px) {
     .hero {
-        height: 300px;
-        padding: 1rem;
+        height: 380px;
+        padding: 0rem;
     }
-    nav {
-       
-        display: none;
-    }
+   
     .enroll {
-        padding: 6px 12px;
+        padding: 10px 12px;
         border-radius: 20px;
         background-color: green;
         color: white;
@@ -1160,7 +1184,7 @@ footer {
     }
     .hero-content article{
         width: 100%;
-        padding-left: 0rem;
+        padding-left: 1rem;
         padding-right: 0rem;
     }
 
