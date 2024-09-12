@@ -5,49 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
     <title>Education</title>
 </head>
 <body>
-    <main class="hero">
-        <nav>
-            <h3>Nature</h3>
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="menu-icon">&#9776;</label>
-            <div class="nav-pages">
-                <ul class="nav-links">
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About Us</a></li>
-                    <li> <a href="#">News</a></li>
-                    <li> <a href="#">Gallery</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <button class="enroll">Enroll Now</button>
-            </div>
-        </nav>
-        <section class="hero-content">
-            <article class="hero-content-text">
-                <aside class="">
-                    <div>
+    <main >
+        <section>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Nuture</h1>
+                </div>
+                <div class="nav-items">
+                    <ul class="nav-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+        
+                <!-- menu button -->
+                <button id="menu-btn" class="menu-btn">☰</button>
+            </nav>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <article>
+                    <div class="hero-content-text">
                         <h1>Learning Center for <br> Your Kids</h1>
+                        <p>Another free template by Colorlib. <br> Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts.</p>
+                        <button class="enroll">
+                            <a href="#" class="btn">Explore Now</a>
+                           </button>
                     </div>
+                </article>
+                <div class="hero-playicon">
                     <div>
-                        <p>Another free template by Colorlib.
-                            Far far away, behind the word mountains,
-                            far from the countries Vokalia and Consonantia,
-                            there live the blind texts.
-                        </p>
+                        <i class="fa-regular fa-circle-play"></i>
+    
                     </div>
-                    <button class="enroll">Explore Now</button>
-                </aside>
-            </article>
-            <div class="hero-playicon">
-                <div>
-                    <i class="fa-regular fa-circle-play"></i>
-
                 </div>
             </div>
+        </section>
+        
+            <!-- Sidebar Menu (for mobile view) -->
+            <div id="sidebar" class="sidebar">
+                <button id="close-btn" class="close-btn">&times;</button>
+                <ul >
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        
+            <script src="script.js"></script>
         </section>
     </main>
     <section class="what-offer">
