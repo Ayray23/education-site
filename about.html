@@ -6,31 +6,57 @@
     <link rel="stylesheet" href="./style/aboutstyle.css">
     <link rel="stylesheet" href="
     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Our Team</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>About us</title>
 </head>
 <body>
-    <nav> 
-        <h1>Nuture</h1>
-        <input type="checkbox" id="menuToggle">
-        <label for="menuToggle" class="menu-icon">&#9776;</label>
-        <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-        <div>
-            <button class="btn">Enroll Now</button>
+    <section>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Nuture</h1>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+    
+            <!-- menu button -->
+            <button id="menu-btn" class="menu-btn">☰</button>
+        </nav>
+    
+        <div class="background-section">
+            <div class="text-overlay">
+                <h1>About us</h1>
+                <p>Another free template by Colorlib. <br> Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts.</p>
+                <button class="enroll-btn-overlay">
+                 <a href="#" class="btn">Explore Now</a>
+                </button>
+            </div>
         </div>
-    </nav>
-    <section class="about-us-section">
-        <div class="overlay"></div>
-        <div class="content">
-            <h2>About Us</h2>
-            <p>Another free template by Colorlib. <br> Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts.</p>
-            <a href="#" class="btn">Explore Now</a>
+    
+        <!-- Sidebar Menu (for mobile view) -->
+        <div id="sidebar" class="sidebar">
+            <button id="close-btn" class="close-btn">&times;</button>
+            <ul >
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <button class="enroll-btn">Enroll Now</button>
         </div>
+    
+        <script src="script.js"></script>
     </section>
+   
+
     <section class="about-us">
         <article>
            <div class="about">
@@ -149,5 +175,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>

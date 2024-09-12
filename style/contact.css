@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.contact-- {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    margin-right: 50px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+.contact-info {
+    color: #333;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #1abc9c;
+}
+
+.icon-location::before { content: "\1F4CD"; } 
+.icon-clock::before { content: "\23F0"; }     
+.icon-envelope::before { content: "\2709"; }
+.icon-phone::before { content: "\260E"; }     
+
+
+@media (max-width:425px) {
+    .contact-- {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}

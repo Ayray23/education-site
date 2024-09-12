@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.enroll-btn {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.enroll-btn:hover {
+    background-color: #45a049;
+}
+.menu-btn {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+.text-overlay {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+.text-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.text-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.enroll-btn-overlay:hover {
+    background-color: #45a049;
+}
+.enroll-btn-overlay a{
+    text-decoration: none;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: left;
+}
+.sidebar ul li a {
+    color: #818181;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    color: #f1f1f1;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.sidebar.active {
+    right:0;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; 
+    }
+
+    .menu-btn {
+        display: block; 
+    }
+    .text-overlay h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .text-overlay p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        display: none; 
+    }
+   
+}
